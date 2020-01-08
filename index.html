@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <!--Put styles in Head or link to style sheet-->
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+      integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
+      crossorigin="anonymous"
+    />
+
+    <!-- this bellow targets all .row class's divs -->
+    <style>
+      .row div {
+        padding: 20px 10px;
+        border: 1px solid;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="JUMBOTRON text-center" style="background: gold">
+      <div class="container">
+        <!--we use containers just to center things-->
+        <h1 class="display-1 ">Welcome to the Jumbotron a BANNER</h1>
+        <p class="lead">a guide for the peeps</p>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-3">
+          <div class="card text-center" style="width: 18rem;">
+            <img
+              class="card-img-top"
+              src="images/plain-blue-sky-background_1308-20781.jpg"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Card Name Blue Skies</h5>
+              <p class="card-text">
+                Click the button to see the bootstrap tutorial
+              </p>
+              <a
+                href="https://www.youtube.com/watch?v=Izc-0yF4EA0&list=PL4cUxeGkcC9jE_cGvLLC60C_PeF_24pvv&index=9"
+                class="btn btn-primary"
+                >Go somewhere</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- colors and borders span class from bootstrap site-->
+
+    <h1 class="display-4 text-center py-5 my-4">
+      this line was added to test pull requests
+    </h1>
+
+    <h2 class="display-4 text-center py-5 my-4">Meet these People</h2>
+    <nav class="nav justify-content-center">
+      <a class="nav-link" href="">The Net Ninja</a>
+      <a class="nav-link" href="">The master</a>
+      <a class="nav-link" href="">The KungFu yoda</a>
+      <a class="nav-link" href="">The icer</a>
+    </nav>
+
+    <div class="p-3 mb-2 bg-info text-white">
+      <h4>An Unordered List:</h4>
+      <ul>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+      </ul>
+    </div>
+
+    <h1>Hello World</h1>
+    <h2>Hello World h2 size</h2>
+    <p>Lorem Ninja stuff</p>
+    <!-- Unordered list ul with li aka list items inside -->
+    <ul>
+      <li>Potatoes</li>
+      <li>Onions</li>
+      <li>Chickens</li>
+    </ul>
+
+    <!-- input consists of two lines one for empty field -->
+    <!-- and the other line is for the buttom submit or click me -->
+
+    <form>
+      <label>Hello Text Field</label>
+      <input type="text" placeholder="Write something" />
+      <input type="submit" value="clickme" />
+    </form>
+
+    <!-- containers in bootstrap fluid adapts to width of screen -->
+
+    <div class="container" style="background-color: skyblue">
+      <h1>Fixed Container stays fixed</h1>
+    </div>
+
+    <div class="container-fluid" style="background-color: yellow">
+      <h1>Fluid Container adapts to screen width</h1>
+    </div>
+
+    <div id="content">
+      <h2>custom signature</h2>
+
+      <div id="cost">Cost: $5 per tile</div>
+      <!-- This line is used in Javascript file -->
+    </div>
+    <!-- This demo element is used in javascriptto make 3 buttons work -->
+
+    <p id="demo">
+      This element has extra spacing and contains <span>a span element</span>.
+    </p>
+
+    <div class="container">
+      <button onclick="getInnerText()">Get innerText</button>
+      <button onclick="getHTML()">Get innerHTML</button>
+      <button onclick="getTextContent()">Get textContent</button>
+    </div>
+
+    <br />
+    <!--br/ is used to make one line space-->
+    <br />
+    <br />
+
+    <!-- GRID SYSTEM : we want to take up 6 columns in width,for small screen sizes and upwards write : col-sm-6 // col stands for column-->
+
+    <div class="container">
+      <div class="row" style="background: lightblue">
+        <!-- we created a row and inside this row we want 2 columns-->
+        <div class="col-sm-6">
+          Column-SmallScreenSizeupwards width 6 columns
+        </div>
+        <div class="col-sm-6">
+          Column-SmallScreenSizeupwards width 6 columns
+        </div>
+      </div>
+
+      <div class="row" style="background: rgb(230, 199, 173)">
+        <!-- we created a row and inside this row we want 2 columns-->
+        <div class="col-md-6">
+          Column-MediumScreenSizeupwards width 6 columns
+        </div>
+        <div class="col-md-6">
+          Column-MediumScreenSizeupwards width 6 columns
+        </div>
+        <div class="col-md-6 col-lg-3">
+          Column-Medium/Large ScreenSizeupwards width 6/3 columns
+        </div>
+        <div class="col-md-6 col-lg-3">
+          Column-medium/largeScreenSizeupwards width 6/3 columns
+        </div>
+      </div>
+
+      <div class="row" style="background: greenyellow">
+        <!-- we created a row and inside this row we want 2 columns, we are going to use bootstraps classes for sizes like bellow-->
+        <div class="col-3">
+          Column-3 width no matter what size screen columns
+        </div>
+        <div class="col-3">
+          Column-3 width no matter what size screen columns
+        </div>
+        <div class="col-3">
+          Column-3 width no matter what size screen columns
+        </div>
+        <div class="col-3">
+          Column-3 width no matter what size screen columns
+        </div>
+      </div>
+      <!-- Notice when screen is small it remains two sections in the SM type but extra small it stacks on top of eachother responsive design
+        Notice for Medium screen sizes its stacked on top already if your in small screen size and will be side by side when expanded to medium size
+        While in Large screen sizes if you chose 3 columns then only when its large enough it will apply the 2 sections next to eachother with each taking 3 col width, but any smaller size it will stack on top of eachother
+        Notice finally col-3 Keeps it at width 3 no matter what screen size
+        we can also use col-md, and when we add another col-md Bootstrap will split the width between both columns automatically on medium screen sizes and above
+        -->
+
+      <div class="row" style="background: pink">
+        <!-- we created a row and inside this row we want 2 columns-->
+        <div class="col-md">
+          Column- width 6 columns automatic by bootstrap for medium and above
+        </div>
+        <div class="col-md">
+          Column- width 6 columns automatic by bootstrap for medium and above
+        </div>
+      </div>
+
+      <div class="row justify-content-md-center" style="background: pink">
+        <!-- we created a row and inside this row we want 2 columns-->
+        <div class="col-md">
+          Column- width 6 columns automatic by bootstrap for medium and above
+        </div>
+        <div class="col-md">
+          Column- width 6 columns automatic by bootstrap for medium and above
+        </div>
+      </div>
+
+      <!-- for more info check out Grid System on bootstrap site-->
+    </div>
+
+    <!-- How to make a BANNER or a JUMBOTRON, DOnt use a container if you want banner to take all the width of screen and not be in center-->
+
+    <p>
+      <strong>Note:</strong> The textContent property is not supported in
+      Internet Explorer 8 and earlier, and the innerText property is not
+      supported in IE9 and earlier. Nobody uses IE
+    </p>
+
+    <script src="js/javascript1.js"></script>
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script
+      src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
+      integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
+      integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
+      integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
