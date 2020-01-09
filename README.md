@@ -24,3 +24,6 @@ window.location="index.html" // this will change location or URL attribute of wi
 //must attach this fn to a button. like this in html
 }
 <button onclick="changepage()"> Press here to go to index page </button>
+
+what is protype based inherticnce, every obj has a property called prototype
+when you create an object it inherits its parents prototype.
