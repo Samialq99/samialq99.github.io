@@ -12,3 +12,15 @@ example if ('1'==1) , this works value of both is 1. it converts to value prior
 example if ('1'===1), this is false because its gonna say string Not equal to num.
 let and const difference ? const you can't reassign after its constant.
 if you declare a const array with 3 numbers you can add to it but not change whats already declared.
+if you declare const c; // it will get undefined value and canNot be given a value later. like c=1; error
+const c =[1,2]; c.push(3); console.log(c); this will work [1,2,3] you only added to object.
+null and undefined, null you must assign manually, undefined is done by js and its called a placeholder.
+typeof null = object, typeof undefined =undefined.
+
+the Window object vs dom object..... this means instead of working with document.getelementbyid, which
+works on html document object model, you can work on the browser window itself.
+example : function changepage() {
+window.location="index.html" // this will change location or URL attribute of window redircting us to another file
+//must attach this fn to a button. like this in html
+}
+<button onclick="changepage()"> Press here to go to index page </button>
