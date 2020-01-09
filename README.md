@@ -27,3 +27,21 @@ window.location="index.html" // this will change location or URL attribute of wi
 
 what is protype based inherticnce, every obj has a property called prototype
 when you create an object it inherits its parents prototype.
+
+function declaration vs function expression :
+function funcD () { console.log('someting)} // this is a declaration
+let funcD = function () {console.log('something')} // this stores the function in a variable thus
+it is a function expression, also unlike the function declaration it has limited scope like a variable.
+Important : when passing a function to another function, you cant pass a function declaration to another function, so you must use a variable = function()
+
+what is promises ? its like wait() , in unix , its hard you need a tutorial on it.
+setTimeout(); // this allows you to place a time for execution. must be in a function
+setTimeout(function() {
+console.log('a');
+}, 0);  
+console.log('b');
+whats the output ? its gonna be b, then a, why when timeout is 0 ?
+because as soon as you use settimeout it becomes asynchronous aka outside the stack and on its own.
+so it will wait for all to execute first.
+
+what is closure and how do you use it ? when a function returns another function, the returning function will keep its environment and variables.
