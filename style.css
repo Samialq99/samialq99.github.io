@@ -177,7 +177,7 @@ footer hr {
     width: 16.6666666%;
   }
   .grid-2 {
-    width: 33.3333333%;
+    width: 25.3333333%;
   }
   .grid-3 {
     width: 50%;
@@ -335,4 +335,36 @@ footer hr {
   .spotlight p {
     text-align: left;
   }
+}
+
+.mg-image img {
+  -webkit-transition: all 1s ease; /* Safari and Chrome */
+  -moz-transition: all 1s ease; /* Firefox */
+  -o-transition: all 1s ease; /* IE 9 */
+  -ms-transition: all 1s ease; /* Opera */
+  transition: all 1s ease;
+  max-width: 100%;
+}
+.mg-image:hover img {
+  -webkit-transform: scale(1.25); /* Safari and Chrome */
+  -moz-transform: scale(1.25); /* Firefox */
+  -ms-transform: scale(1.25); /* IE 9 */
+  -o-transform: scale(1.25); /* Opera */
+  transform: scale(1.25);
+}
+/* just apply some height and width to the wrapper.*/
+.mg-image {
+  width: 70px;
+  height: 70px;
+  overflow: hidden;
+}
+
+.zoom {
+  transition: transform 0.8s; /* Animation */
+}
+
+.zoom:hover {
+  transform: scale(
+    2
+  ); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
