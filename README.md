@@ -1,5 +1,5 @@
 # webdev
-
+click here to see site :https://samialq99.github.io/
 Javascript Interview questions 10 :
 what is the difference between Let and Var ?
 Let came in 2015 , Let has a block scope, will die at end block into garbage collection
